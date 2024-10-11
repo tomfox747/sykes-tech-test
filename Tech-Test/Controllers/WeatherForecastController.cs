@@ -18,22 +18,6 @@ namespace Tech_Test.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IWeatherForecastService _weatherForecastService;
 
-        private static List<WeatherForecast> weatherForecasts = new List<WeatherForecast>()
-        {
-            new WeatherForecast(12, "Manchester", 74, WeatherDescription.Cloudy),
-            new WeatherForecast(13, "Birmingham", 65, WeatherDescription.Sunny),
-            new WeatherForecast(16, "Leeds", 57, WeatherDescription.Sunny),
-            new WeatherForecast(22, "Warrington", 80, WeatherDescription.Rain),
-            new WeatherForecast(10, "Liverpool", 78, WeatherDescription.HeavyRain),
-            new WeatherForecast(8, "London", 56, WeatherDescription.Cloudy),
-            new WeatherForecast(-3, "Glasgow", 85, WeatherDescription.Snow),
-            new WeatherForecast(14, "Chesire", 75, WeatherDescription.Rain),
-            new WeatherForecast(14, "Cardiff", 72, WeatherDescription.Rain),
-            new WeatherForecast(15, "Bristol", 70, WeatherDescription.Sunny),
-            new WeatherForecast(20, "Hull", 92, WeatherDescription.Sunny),
-            new WeatherForecast(18, "Lincoln", 63, WeatherDescription.HeavyRain),
-        };
-
         public WeatherForecastController(ILogger<WeatherForecastController> logger, IWeatherForecastService service)
         {
             _logger = logger;
@@ -75,9 +59,27 @@ namespace Tech_Test.Controllers
 
     public class WeatherForecastService : IWeatherForecastService
     {
+
+        private static List<WeatherForecast> weatherForecasts = new List<WeatherForecast>()
+        {
+            new WeatherForecast(12, "Manchester", 74, WeatherDescription.Cloudy),
+            new WeatherForecast(13, "Birmingham", 65, WeatherDescription.Sunny),
+            new WeatherForecast(16, "Leeds", 57, WeatherDescription.Sunny),
+            new WeatherForecast(22, "Warrington", 80, WeatherDescription.Rain),
+            new WeatherForecast(10, "Liverpool", 78, WeatherDescription.HeavyRain),
+            new WeatherForecast(8, "London", 56, WeatherDescription.Cloudy),
+            new WeatherForecast(-3, "Glasgow", 85, WeatherDescription.Snow),
+            new WeatherForecast(14, "Chesire", 75, WeatherDescription.Rain),
+            new WeatherForecast(14, "Cardiff", 72, WeatherDescription.Rain),
+            new WeatherForecast(15, "Bristol", 70, WeatherDescription.Sunny),
+            new WeatherForecast(20, "Hull", 92, WeatherDescription.Sunny),
+            new WeatherForecast(18, "Lincoln", 63, WeatherDescription.HeavyRain),
+        };
+
+
         public WeatherForecastService()
         {
-            // Add required service functions
+
         }
     }
 
