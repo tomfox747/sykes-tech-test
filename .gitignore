@@ -1,0 +1,69 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio temporary files
+*.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# DotNet Core
+project.lock.json
+project.fragment.lock.json
+*.dbmdl
+
+# Logs
+*.log
+
+# Others
+*.d.ts
+*.ncb
+*.aps
+*.tlog
+*.pdb
+*.db
+
+# Azure Web Apps
+*.Publish.xml
+*.pubxml
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build.props
+!**/packages/build.runtimes
+!**/packages/build.scripts
+
+# Visual Studio Code settings
+.vscode/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*/
+*.[Rr]eSharper*/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage results
+coverage/
+*.coverage
+*.coveragexml
