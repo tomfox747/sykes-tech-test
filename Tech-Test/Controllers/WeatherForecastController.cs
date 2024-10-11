@@ -6,15 +6,6 @@ namespace Tech_Test.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly Dictionary<WeatherDescription, string> WeatherDescriptionMapping = new Dictionary<WeatherDescription, string>()
-        {
-            { WeatherDescription.Sunny, "Sunny" },
-            { WeatherDescription.Cloudy, "Cloudy" },
-            { WeatherDescription.Rain, "Rain" },
-            { WeatherDescription.HeavyRain, "HeavyRain" },
-            { WeatherDescription.Snow, "Snow" },
-        };
-
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IWeatherForecastService _weatherForecastService;
 
@@ -58,6 +49,14 @@ namespace Tech_Test.Controllers
 
     public class WeatherForecastService : IWeatherForecastService
     {
+        private static readonly Dictionary<WeatherDescription, string> WeatherDescriptionMapping = new Dictionary<WeatherDescription, string>()
+        {
+            { WeatherDescription.Sunny, "Sunny" },
+            { WeatherDescription.Cloudy, "Cloudy" },
+            { WeatherDescription.Rain, "Rain" },
+            { WeatherDescription.HeavyRain, "HeavyRain" },
+            { WeatherDescription.Snow, "Snow" },
+        };
 
         private static List<WeatherForecast> weatherForecasts = new List<WeatherForecast>()
         {
@@ -74,6 +73,7 @@ namespace Tech_Test.Controllers
             new WeatherForecast(20, "Hull", 92, WeatherDescription.Sunny),
             new WeatherForecast(18, "Lincoln", 63, WeatherDescription.HeavyRain),
         };
+
 
     }
 
