@@ -18,21 +18,21 @@ namespace Tech_Test.Controllers
         // TASK
         // CONNECT THE FOLLOWING END POINTS TO SERVICES
 
-        [HttpGet(Name = "GetWhereHighHumidity")]
+        [HttpGet("GetWhereHighHumidity")]
         public async Task<IActionResult> GetAllWhereHighHumidity()
         {
             return Ok();
         }
 
         // should only return the location names, not the full forecast
-        [HttpGet(Name = "GetSunnyLocations")]
+        [HttpGet("GetSunnyLocations")]
         public async Task<IActionResult> GetSunnyLocations()
         {
             return Ok();
         }
 
         // FOR THIS ONE, ONCE THE TEMPERATURE CLASS HAS BEEN IMPLEMENTED, ADD FLAG FOR UNIT
-        [HttpGet(Name = "GetWhereTempBetween")]
+        [HttpGet("GetWhereTempBetween")]
         public async Task<IActionResult> GetWhereTempIsBetween(float min, float max)
         {
             return Ok();
