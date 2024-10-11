@@ -54,7 +54,6 @@ namespace Tech_Test.Controllers
 
     public interface IWeatherForecastService
     {
-
     }
 
     public class WeatherForecastService : IWeatherForecastService
@@ -76,11 +75,6 @@ namespace Tech_Test.Controllers
             new WeatherForecast(18, "Lincoln", 63, WeatherDescription.HeavyRain),
         };
 
-
-        public WeatherForecastService()
-        {
-
-        }
     }
 
     // classes and enums
